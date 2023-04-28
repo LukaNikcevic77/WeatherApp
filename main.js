@@ -31,7 +31,7 @@ GoHome.addEventListener('click', (e) => {
 
 async function GetWeather(a){
   let city = a;
-  let url = 'https://api.weatherapi.com/v1/current.json?key=9bef6260d5904ed79a6144744232704&q=' + city;
+  let url = '//api.weatherapi.com/v1/current.json?key=9bef6260d5904ed79a6144744232704&q=' + city;
   
   try {
     const response = await fetch(url, {mode: 'cors'});
