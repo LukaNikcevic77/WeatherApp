@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Micev Weather</title>
+  </head>
+  <body>
+    
+    <div class="WeatherDisplay " id="weathersearch">
+      <label for="location" class="label">Please enter your location:</label>
+      <input type="text" id="location" name="location" pattern="[A-Za-z]+" required>
+      <button type="submit" class="SubmitButton" id="goToResults">Submit</button>
+    </div>
+    <div class="WeatherDisplay hidden absolute" id="weathershowcase">
+      <h1 id="CityNameField" style="text-align: center;">City</h1>
+      <p id="DegreeNameField">Degrees</p>
+      <span id="goHome">
+        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+      </span>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
